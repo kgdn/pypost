@@ -1,4 +1,4 @@
-# Jekyll Blog Poster
+# pypost
 
 This simple Python script will create a new blog post in your Jekyll `_posts/` directory. It will ask you for the title, description, your name and the tags. It will then create a new file with a name in the standard Jekyll YYYY-MM-DD-title.md format. Once the file is created, it will open it in your default editor.
 
