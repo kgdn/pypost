@@ -58,8 +58,10 @@ def create_file():
     for i in range(len(tags_list)):
         tags_list[i] = tags_list[i].strip()
 
-    file_name = title.replace(" ", "-") + ".md"
+    file_name = title.replace(" ", "-")
     file_name = file_name.lower()
+    file_name = ''.join(e for e in file_name if e.isalnum() or e == '-')
+    file_name = file_name + ".md"
 
 
 def export_file():
